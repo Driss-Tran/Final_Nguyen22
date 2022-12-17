@@ -1,6 +1,5 @@
 package com.finalproject.nguyen22.controller;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -20,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
 import com.finalproject.nguyen22.entity.Banking;
 import com.finalproject.nguyen22.entity.Booking;
 import com.finalproject.nguyen22.entity.Momo;

@@ -13,7 +13,9 @@
 </head>
 
 <body>
-	<div align="center"><h1>RECEIPT</h1></div>
+	<div align="center">
+		<h1>RECEIPT</h1>
+	</div>
 	<div align="center" class="receipt" th:if="${payment}">
 		<table class="table table-borderless">
 			<tr>
@@ -48,8 +50,8 @@
 	</div>
 	<div align="center" class="receipt" th:unless="${payment}">
 		<table class="table table-borderless">
-		
-					<tr>
+
+			<tr>
 				<td>Phương thức thanh toán:</td>
 				<td th:if="${newPayment.payment_type}=='0'">Thanh toán khi nhận phòng</td>
 				<td th:if="${newPayment.payment_type}=='1'">MOMO</td>
@@ -87,13 +89,14 @@
 				<td>Price:</td>
 				<td th:text="${newPayment.price}"></td>
 			</tr>
-
-
 			<tr>
 				<td>Payment Date:</td>
 				<td th:text="${newPayment.payment_date}"></td>
 			</tr>
 		</table>
+	</div>
+	<div align="center">
+		<a th:href="@{~/home}" id="back-button">Trở về</a>
 	</div>
 </body>
 
